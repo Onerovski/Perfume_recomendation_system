@@ -1,8 +1,8 @@
 AI-Powered Perfume Recommendation System
-📌 Overview
+ Overview
 
 This project is an intelligent perfume recommendation engine built with Deep Learning. Instead of relying on simple keyword matching or user ratings, the system understands the "chemical DNA" and "semantic profile" of over 26,000 perfumes. It utilizes an Artificial Neural Network (Autoencoder) to compress fragrance notes, main accords, and gender target audiences into a 128-dimensional latent space.
-🚀 Features
+ Features
 
     Deep Learning Based: Uses a Keras Autoencoder to map categorical textual data into a dense mathematical vector space.
 
@@ -10,7 +10,7 @@ This project is an intelligent perfume recommendation engine built with Deep Lea
 
     Cross-Brand Discovery: Includes a custom filtering algorithm to prevent overspecialization (flanker trap), forcing the AI to suggest identical scent profiles from entirely different brands.
 
-🧠 How It Works
+ How It Works
 Getty Images
 
     Data Preprocessing: Raw data is cleaned, and text features (Notes, Accords, Gender) are combined and vectorized using CountVectorizer.
@@ -21,7 +21,7 @@ Getty Images
 
     Recommendation: Cosine Similarity is calculated between these embeddings to find the nearest neighbors in the latent space.
 
-📂 Exported Models & Files
+ Exported Models & Files
 
     final_encoder.keras: The trained bottleneck layer (brain) of the neural network.
 
@@ -31,7 +31,7 @@ Getty Images
 
     final_cleaned_perfumes.csv: The cleaned dataset for the front-end display.
 
-🔮 Future Work
+ Future Work
 
     Integration with a Flask/Django backend to serve predictions via a RESTful API.
 
